@@ -14238,5 +14238,20 @@ src='//fls-fe.amazon.com.au/1/batch/1/OP/A39IBJ37TRP1C6:356-1077062-4831846:90G9
 alt="" />
 </noscript>
 </div>
+<script>
+    // Nonaktifkan klik kanan
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  
+    // Nonaktifkan tombol F12, Ctrl+Shift+I, dll
+    document.onkeydown = function(e) {
+      if (e.keyCode == 123 || 
+          (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || 
+          (e.ctrlKey && e.keyCode == 85)) {
+        return false;
+      }
+    };
+  </script>
 </body>
 </html>
